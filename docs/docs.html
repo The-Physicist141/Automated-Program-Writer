@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documentation</title>
+    
+    <style>
+      
+      
+      body {
+        font-family: monospace;
+        background-color: black;
+        color: white;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      #intro {
+        text-align: center;
+        margin-left: 2cm;
+        margin-right: 2cm;
+      }
+      
+      
+      
+      .margins {
+        margin-left: 0.5cm;
+      }
+      
+      i {
+        color: rgb(0, 255, 255);
+      }
+      
+      
+    </style>
+    
+  </head>
+  <body>
+    <h1>Documentation</h1>
+    <div id= "intro">
+      I'm going to update this documentation as much as I wish. Hopefully I won't forget anything important.
+    </div>
+    
+	<h2 id= "end">end<h2>
+	<div class= "margin">
+		<span>Properly closes functions and loops, not the same as endheader.</span>
+	</div>
+	
+    <h2 id= "print">print [arg1] [arg2] [...]</h2>
+    <div class= "margins">
+      <span>This command translates to "System.out.println()" in Java. The arguments are concatenated with a space added after each one.</span>
+      <br><i>Ailiases: prt, p</i>
+    </div>
+    
+    <h2 id= "prtvar">pvar [variable]</h2>
+    <div class= "margins">
+      <span>Fstrings and the like are currently unavailable in whatever I'll call this sub-language. You must use <i>pvar</i> to concatenate.</span>
+      <br><i>Ailiases: pvar, pv</i>
+    </div>
+    
+    <h2 id= "var">var [variableName] [value]</h2>
+    <div class= "margins">
+      <span>This command creates a variable without requiring the type. Since Java is type specific of course, the type will still be determined automatically.</span>
+      <br><i>Ailiases: let</i>
+    </div>
+    
+    <h2 id= "for">for</h2>
+    <div class= "margins">
+      <span>This command simply declares a for loop. There are sub commands for using it.</span>
+      <h3>from [start] to [end]</h3>
+      <span>This assumes a starting variable of i. An embedded loop should increment the character to j, then k, then so on. It will count backward if necessary. To be inclusive, add "inc" or "inclusive" to the end of the statement</span>
+      
+      <h3>from [start] forever</h3>
+      <span>This increments the counter and repeats the loop forever.</span>
+    
+      <h3></h3>
+    </div>
+    
+    <h2 id= "java">java [args1] [...]</h2>
+    <div class= "margins">
+      <span>This is your failsafe for when you can't use functions or commands. It might be convenient for multi-line code, though.</span>
+      <i>Ailiases: j</i>
+    </div>
+    
+    <h2 id= "//">// [args1] [...]</h2>
+    <div class= "margins">
+      <span>Any programmer knows what this means. If you don't, you've been spending too much time with Python, or, <i>shudders,</i> <b>Lua.</b><br />Alright I'll admit it, I'm very tired tonight. It's 1:01 AM and I didn't get enough sleep the night before. Please understand.</span>
+      <i>Ailiases: None. Sorry if you like Python.</i>
+    </div>
+    
+    <h2 id= "read">read [types] [var name]</h2>
+    <div class= "margins">
+      <span>This creates one scanner object in your program. Then, if one doesn't already exists, it creates a variable with the given name and type to put the value of the scanner call into.</span>
+      <i>Ailiases: None</i>
+    </div>
+	
+	<h2 id= "ask">ask [args1] ...</h2>
+	<div class= "margins">
+		<span>This prints like you'd expect from any print command, but with the benefit of creating a newline and a > character, allowing you to fancify your input!</span>
+	</div>
+	
+	<h2 id= "rand">rand [variableName] [min] [max]</h2>
+	<div class= "margins">
+		<span>Generates a random number from the desired minimum to maximum.</span>
+	</div>
+	
+	<h2 id= "ask">out [args1] ...</h2>
+	<div class= "margins">
+		<span>Returns a value from a function</span>
+	</div>
+	
+	<h2 id= "ask">func [returnType] [methodName] [arg1Type] [arg1Name] [arg2Type] [arg2Name] ...</h2>
+	<div class= "margins">
+		<span>Returns a value from a function</span>
+	</div>
+	
+	
+  </body>
+</html>

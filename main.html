@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <title>Creates Java programs for you</title>
+      <link rel= "stylesheet" href= "main/main.css">
+	</head>
+	<body>
+      <h1>The Master of Java</h1>
+      
+      <textarea id= "code-input">func words a int x</textarea>
+      
+      <input type= "button" onclick= "readLines();" value= "Compile" />
+      <input type= "button" onclick= "createFile();" value= "Create New File" />
+      <br>
+      Use class declaration: <input id= "use-class-declaration" onclick= "ocd();" type= "checkbox" checked /><br>
+      <!-- <div id= "program-file-name">Program file name: <input id= "class-name" value= "Main"></div> -->
+      <select id= "file-select">
+        
+      </select>
+      
+      <div id= "code-output-display">Enter some pseudo code and compile it into Java code. It saves time.</div>
+      <div id= "code-error"></div>
+      
+      <script src= "main/src/type.js"></script>
+      <script src= "main/src/item.js"></script>
+      <script src= "main/src/list.js"></script>
+      <script src= "main/src/func.js"></script>
+      <script src= "main/src/loop.js"></script>
+      <script src= "main/src/main.js"></script>
+      <script src= "main/src/file.js"></script>
+	</body>
+</html>
